@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Added responsive viewport meta tag -->
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="container">
+    <div class="start_container">
+      <div class="start_btn"><button>Start Quiz</button></div>
+      <div class="leaderboard"><button>Leaderboard</button></div>
+    </div>
+
+    <div class="name_box">
+      <input type="text" class="name" placeholder="What's your name?" />
+      <input type="button" class="name_btn" value="OK! Let's Start" />
+    </div>
+
+    <div class="instructions">
+      <div class="info_title">
+        <span>Rules of this Quiz</span>
+      </div>
+      <div class="info_list">
+        <div class="info">
+          1. You only have <span>15 seconds</span> per question.
+        </div>
+        <div class="info">
+          2. Once you select your answer, you cannot change it.
+        </div>
+        <div class="info">
+          3. You cannot select any option after time runs out.
+        </div>
+        <div class="info">
+          4. You cannot exit the Quiz while playing.
+        </div>
+        <div class="info">
+          5. After you finish, click "Submit Score" to enter the leaderboard.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Give Up</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+    <div class="math-quiz">
+      <header>
+        <div class="title">Math Quiz</div>
+        <div class="timer">
+          <div class="time_text">Time Remaining</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div>
+          <span id="questions"
+            ><p id="num1"></p>
+            X
+            <p id="num2"></p
+          ></span>
+        </div>
+        <div class="option_list">
+          <div class="option" id="option1"></div>
+          <div class="option" id="option2"></div>
+          <div class="option" id="option3"></div>
+          <div class="option" id="option4"></div>
+        </div>
+      </section>
+      <footer>
+        <div class="points">
+          <div class="point_text">Your Score</div>
+          <div class="point_no">0</div>
+        </div>
+        <button class="next_btn">Show Result</button>
+      </footer>
+    </div>
+    <div class="result_box">
+      <div>
+        Highest Score:
+        <p>2053 Points</p>
+      </div>
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">
+        Congratulations! You have successfully completed the Quiz
+      </div>
+      <div class="score_text"></div>
+      <div class="buttons">
+        <button class="restart">Submit My Score</button>
+        <button class="quit">Play Again</button>
+      </div>
+    </div>
+  </main>
+  <a
+    id="leaderboard_link"
+    href="https://drive.google.com/file/d/1m0WULlae5pYoBCkdNt1zS-QC65aSoot_/view?usp=sharing"
+    target="_blank"
+  ></a>
+  <a id="link" target="_blank"></a>
+</body>
+
+<script type="text/javascript" src="index.js"></script>
+</html>
